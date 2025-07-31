@@ -1,7 +1,8 @@
 # Calculator: Accept two numbers and an operator (+, -, *, /) and perform the Calculation.
 def calculator(a, b, operator):
     switch = {
-        '+': a + b,   
+ 
+        '+': a + b,  
         '-': a - b,  
         '*': a * b,   
         '/': a / b    
@@ -14,6 +15,9 @@ if __name__ == "__main__":
     opr  = input("Enter the Operator :")
  
     result = calculator(n1,n2,opr)
+ 
+    result = calculator(n1,n2,opr)
+ 
  
     print(result)
  

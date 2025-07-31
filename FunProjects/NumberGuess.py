@@ -8,10 +8,9 @@ def guess_the_number():
     while True:
         try:
  
-            guess = int(input("Enter your guess (1-100): "))  
+            guess = int(input("Enter your guess (1-100): "))1
+    
  
- 
-            guess = int(input("Enter your guess (1-100): "))  # Convert input to an integer
  
             attempts += 1
             if guess < target:
@@ -21,7 +20,7 @@ def guess_the_number():
  
             guess = int(input("Enter your guess (1-100): "))  
  
-            guess =int(input("Enter your guess (1-100): "))
+ 
  
             attempts += 1
             if guess < target:   
@@ -42,7 +41,18 @@ def main():
         print("1. Play Guess the Number")
         print("2. Exit")
         
+ 
+        try:
+            choice = input("Enter your choice: ")
+            if choice in (1,2):
+                break
+            else:
+                print("Enter either 1 or 2")
+        except:
+            print("Enter either 1 or 2")   
+ 
         choice = int(input("Enter your choice: "))   
+ 
         
         if choice == "1":
             guess_the_number()

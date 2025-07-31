@@ -3,10 +3,15 @@
 def grade_description(grade):
     switch = {
  
+        'A': "Excellent",
+        'B': "Good",
+        'C': "Average",
+        'D': "Poor",  
         'B': "Good",
         'C': "Average",
         'D': "Poor",
         'A': "Excellent",  
+ 
         'F': "Fail"
  
  
@@ -15,16 +20,12 @@ def grade_description(grade):
     return switch.get(grade, "Not a valid grade") 
 
 if __name__ == "__main__":
+ 
+    user = input("Enter grade among A,B,C,D,F *in captial:")
+    rs = grade_description(user)
+ 
     alp = input("Enter a grade: ").upper()
     rs = grade_description(alp)
+ 
     print(rs)
- 
-if __name__ == "__main__":
- 
-    grade = grade_description('Z')
-    print(grade_description(grade):)
-    
- 
-    rs = grade_description('Z')
-    print(rs)
- 
+  

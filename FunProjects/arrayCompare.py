@@ -20,8 +20,27 @@ def comp(array1, array2):
 # Example usage:
 print(comp([1, 2, 3, 4], [1, 4, 9, 16]))
  
+    if array1 == [] and array2 != []:  
+        return False
  
-   
+     
+    if (sorted(array2) == sorted([i ** 2 for i in array1])) or (sorted(array1) == sorted([i ** 2 for i in array2])):
+        print("the two arrays are equal is one of the array is equal to square of another array")  
+      
+    return   
+ 
+     
+    if (sorted(array1) == sorted([i ** 0.5 for i in array2])) and (sorted(array2) == sorted([i ** 2 for i in array1])):  
+        return True
+    else:  
+        return False
+  
+ 
+result = comp([1,2,3,4], [1,4,9,16])
+if result:
+    print("The two arrays are same as the given condition")
+else:
+    print("The two arrays are not same as the given condition")
  
     if array1 is None and array2 is not None: 
         print("The two arrays are not same ")
@@ -57,4 +76,5 @@ print(comp(lis1,lis2))
  
  
 print(comp([1,2,3,4], [1,4,9,16]))
+ 
  

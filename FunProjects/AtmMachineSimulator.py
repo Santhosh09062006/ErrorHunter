@@ -4,7 +4,7 @@ class ATM:
         self.balance = balance
 
     def deposit(self, amount):
-        if amount >= 0:
+        if amount <= 0:
             print("Amount must be positive.")
         else:
             self.balance += amount

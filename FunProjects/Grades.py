@@ -1,4 +1,4 @@
-class StudentGrades:
+class Grades:
     def __init__(self):
         self.grades = {}
 
@@ -11,7 +11,7 @@ class StudentGrades:
         return average
 
 # Example Usage
-grades = StudentGrades()
+grades = Grades()
 grades.add_grade("John", 85)
 grades.add_grade("Sarah", 90)
 grades.add_grade("Mike", 78)
